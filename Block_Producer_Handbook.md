@@ -53,7 +53,7 @@ history -c
 ```
 ## Check status
 ```bash
-Mina daemon status
+mina client status
 systemctl --user status mina
 journalctl --user -u mina -n 1000 -f
 ```
