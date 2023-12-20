@@ -55,6 +55,37 @@ history -c
 ```bash
 systemctl --user status mina
 journalctl --user -u mina -n 1000 -f
-mina client status
 ```
+mina client status
+```bash
+Mina daemon status
+-----------------------------------
+
+Global number of accounts:                     189516
+Block height:                                  315309
+Max observed block height:                     315309
+Max observed unvalidated block height:         315309
+Local uptime:                                  33m53s
+Ledger Merkle root:                            jxbcWQsASfpN15hybJExFw141agXwVSkrBJy4DC2EhJnf2Td7Uq
+Protocol state hash:                           3NKXakPGoujubbXdnPnZrgkcKxtBo2rRNJFs1KyiD7hwExCChmJc
+Chain id:                                      5f704cc0c82e0ed70e873f0893d7e06f148524e3f0bdae2afb02e7819a0c24d1
+Git SHA-1:                                     c980ba87c3417f40a7081225dfe7478c5ee70fd7
+Configuration directory:                       /home/david/.mina-config
+Peers:                                         55
+User_commands sent:                            0
+SNARK worker:                                  None
+SNARK work fee:                                100000000
+Sync status:                                   Synced
+Catchup status:                                
+        To build breadcrumb:           0
+        To initial validate:           0
+        Finished:                      296
+        To download:                   0
+        Waiting for parent to finish:  0
+        To verify:                     0
+
+Block producers running:                       1 (B62qpy6sXLwATHek6wjWKqmDukA7m62rtF1ChoTt1ZMT2po3a4hTW3R)
+Coinbase receiver:                             Block producer
+```
+
 
