@@ -1,4 +1,5 @@
 # Mina Block Producer Hand Book on Mainnet
+This hand book guides Block Producer how to deploy a mina node which running as a service and how to check node status. 
 _Current mina version is mina-mainnet=1.4.0-c980ba8_   
 _Chain-id:5f704cc0c82e0ed70e873f0893d7e06f148524e3f0bdae2afb02e7819a0c24d1_   
 _Git SHA-1:c980ba87c3417f40a7081225dfe7478c5ee70fd7_   
@@ -43,11 +44,6 @@ systemctl --user enable mina
 ```
 ## Start Mina
 `systemctl --user start mina`
-## Check status
-```bash
-systemctl --user status mina
-journalctl --user -u mina -n 1000 -f
-```
 ## Stop Mina
 ```bash
 systemctl --user stop mina
@@ -55,3 +51,10 @@ sudo rm -rf ~/.mina-config
 sudo rm -r /tmp/*
 history -c
 ```
+## Check status
+```bash
+systemctl --user status mina
+journalctl --user -u mina -n 1000 -f
+mina client status
+```
+
