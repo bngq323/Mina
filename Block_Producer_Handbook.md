@@ -1,4 +1,7 @@
 # Mina Block Producer Hand Book on Mainnet
+_Current mina version is mina-mainnet=1.4.0-c980ba8_   
+_Chain-id:5f704cc0c82e0ed70e873f0893d7e06f148524e3f0bdae2afb02e7819a0c24d1_   
+_Git SHA-1:c980ba87c3417f40a7081225dfe7478c5ee70fd7_   
 ## Setup firewall
 ```bash
 sudo ufw allow 22
@@ -47,7 +50,6 @@ journalctl --user -u mina -n 1000 -f
 ```
 ## Stop Mina
 ```bash
-### reload mina.service
 systemctl --user stop mina
 sudo rm -rf ~/.mina-config
 sudo rm -r /tmp/*
